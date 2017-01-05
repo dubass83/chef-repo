@@ -8,6 +8,6 @@ include_recipe "chef-client"
 include_recipe "apt"
 include_recipe "ntp"
 
-file "~/new.txt" do 
-  content "This is new file! #{ENV["USER"]}"
+file "/home/vagrant/new.txt" do 
+  content "This is new file! #{ENV["USER"]}!!!"
 end
